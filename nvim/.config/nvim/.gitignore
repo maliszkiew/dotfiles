@@ -1,0 +1,17 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+# Local configuration files (machine-specific)
+lazyvim.json
+# Backup files
+*.bak
+*.swp
+*.tmp
+# OS specific
+.DS_Store
+Thumbs.db

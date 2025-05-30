@@ -1,0 +1,6 @@
+# Ignore nested git repositories in plugins
+*/.git/
+*/.git
+**/.git/
+**/.git
+
