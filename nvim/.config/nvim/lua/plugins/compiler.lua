@@ -4,12 +4,6 @@ return {
     cmd = { "CompilerOpen", "CompilerToggleResults", "CompilerRedo" },
     dependencies = { "stevearc/overseer.nvim", "nvim-telescope/telescope.nvim" },
     opts = {},
-    keys = {
-      -- Add key mappings within the plugin spec
-      { "<F6>", "<cmd>CompilerOpen<cr>", desc = "Open compiler" },
-      { "<S-F6>", "<cmd>CompilerStop<cr><cmd>CompilerRedo<cr>", desc = "Compiler redo" },
-      { "<S-F7>", "<cmd>CompilerToggleResults<cr>", desc = "Toggle compiler results" },
-    },
   },
   { -- The task runner we use
     "stevearc/overseer.nvim",
