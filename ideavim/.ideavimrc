@@ -101,14 +101,8 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 " Go to Right Window
 nmap <C-l> <C-w>l
-" Increase Window Height
-nmap <C-Up> <Action>(IncrementWindowHeight)
-" Decrease Window Height
-nmap <C-Down> <Action>(DecrementWindowHeight)
-" Decrease Window Width
-nmap <C-Left> <Action>(DecrementWindowWidth)
-" Increase Window Width
-nmap <C-Right> <Action>(IncrementWindowWidth)
+" Stretch Editor to Top
+
 " Move Down
 nmap <A-j> <Action>(MoveLineDown)
 imap <A-j> <Esc><Action>(MoveLineDown)i
@@ -525,3 +519,16 @@ nnoremap <leader>tr :action ActivateRunToolWindow<CR>
 nnoremap <leader>th :action HideActiveWindow<CR>
 nnoremap <leader>tc :action CloseActiveTab<CR>
 nnoremap <leader>to :action ActivateRunToolWindow<CR>
+
+nnoremap <leader>[f :action MethodUp<CR>
+nnoremap <leader>]f :action MethodDown<CR>
+
+" Set leader key to space (optional, if not already set)
+
+" Vertical split (simulate LazyVim <leader>|)
+nmap <leader>| <Action>(SplitVertically)
+
+" Horizontal split (simulate LazyVim <leader>-)
+nmap <leader>- <Action>(SplitHorizontally)
+
+" Move between splits (standard Vim, works in IdeaVim)
