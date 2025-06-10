@@ -7,19 +7,29 @@ return {
       enabled = true,
       sources = {
         explorer = {
-          auto_close = false,
+          auto_close = true,
           hidden = false,
           layout = {
-            preset = "sidebar",
+            preset = "default",
             preview = false,
             layout = { width = 20 },
           },
         },
         projects = {
           -- THIS is where you put your patterns and dev directories!
+          enabled = true,
           dev = { "~/repos" },
           patterns = { ".git", "CMakeLists.txt", "Makefile", "venv" },
         },
+        bigfile = { enabled = true },
+        dashboard = { enabled = true },
+        indent = { enabled = true },
+        notifier = { enabled = true },
+        quickfile = { enabled = true },
+        scope = { enabled = true },
+        scroll = { enabled = true },
+        statuscolumn = { enabled = true },
+        words = { enabled = true },
       },
     },
   },
