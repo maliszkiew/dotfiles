@@ -87,6 +87,10 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='nvim'
 # fi
+alias vim="nvim"
+alias vi="nvim"
+alias neovim="nvim"
+alias nvim="nvim"
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
