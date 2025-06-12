@@ -6,12 +6,11 @@ debug
 foo.*
 *.log
 data
-# Local configuration files (machine-specific)
-lazyvim.json
-# Backup files
 *.bak
 *.swp
 *.tmp
 # OS specific
 .DS_Store
 Thumbs.db
+stylua.toml
+neoconf.json
